@@ -17,15 +17,17 @@
     --purple-cor:#412234;
     --green-cor:#BDD9BF;
 }
+
+
 *{
     box-sizing: border-box;
+    outline: none;
 }
 
 body
 {
     background-color: var(--purple-cor);
-    font-family: 'Fruktur',sans-serif;
-    color: #fff;
+    font-family: 'Inconsolata',sans-serif;
     display: flex;          /*coloca tudo em linha*/
     /*flex-direction: column; /*coloca tudo em coluna*/
     flex-wrap: wrap;
@@ -51,7 +53,7 @@ body
     cursor: pointer;
     font-family: 'Inconsolata',sans-serif;
 }
-.add i {
+.add:active {
     margin-right: 10px;
 }
 
@@ -87,11 +89,15 @@ body
     height: 400px;
     width: 100%;
     padding: 20px;
-
 }
- .hidden {
-     display: none;
- }
+
+.main {
+    padding: 20px;
+}
+
+.hidden {
+    display: none;
+}
 
 
 

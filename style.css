@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fruktur&family=Mochiy+Pop+P+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald');
 @import url('https://fonts.googleapis.com/css2?family=Mulish&family=Poppins&display=swap');
@@ -25,18 +24,48 @@
 body
 {
     background-color: var(--purple-cor);
-    font-family: 'Poppins',sans-serif;
+    font-family: 'Fruktur',sans-serif;
     color: #fff;
     display: flex;          /*coloca tudo em linha*/
-    flex-direction: column; /*coloca tudo em coluna*/
-     align-items: center;    /*alinha horizontalmente*/
-     justify-content: center;/*alinha tudo verticalmente com uso de height:100vh*/
-    height: 100vh;
+    /*flex-direction: column; /*coloca tudo em coluna*/
+    flex-wrap: wrap;
+    /* align-items: center;    /*alinha horizontalmente*/
+    /* justify-content: center;/*alinha tudo verticalmente com uso de height:100vh*/
+   /* height: 100vh;
      overflow: hidden; /*BARRA DE SCROLL DOWN, HIDDEN ESCONDIDA*/
      margin: 0;
-     overflow-x: hidden; /*REMOVER BARRA DE SCROLL HORIZONTAL*/
-     padding: 10px;
+    /* overflow-x: hidden; /*REMOVER BARRA DE SCROLL HORIZONTAL*/
+    /* padding: 10px;*/
+    padding-top: 3rem;
 }
+
+.add {
+    position: fixed;
+    top: 1rem; /*1 rem = 16px*/
+    right: 1rem;
+    background-color: #9ec862;
+    border: none;
+    border-radius: 3px;
+    padding: 0.5rem 1rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+.nota{
+    background-color: #fff;
+    box-shadow: 0 0 10px 4px rgba(0,0,0,0.1);
+    margin: 30px 20px;
+    height: 400px;
+    width: 400px;
+} 
+
+.nota .ferr {
+    background-color: #9ec862;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.5 rem;
+}
+
 
 
 
